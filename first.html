@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="first.css">
+    <script type = "text/javascript" src="first.js"></script>  
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=League+Gothic&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <script>
+        function myfun(){
+        var a= document.getElementById("password").value;
+        var b= document.getElementById("confirm").value;
+        if(a==""){
+            document.getElementById("massage").innerHTML="*please fill password";
+            return false;
+        }
+        if(a.length<8){
+            document.getElementById("massage").innerHTML="*password must greater than 7";
+            return false; 
+        }
+        if(a.length>15){
+            document.getElementById("massage").innerHTML="*password must smaller than 15";
+            return false; 
+        }
+        if(a!=b){
+            document.getElementById("massage").innerHTML="*password are not same";
+            return false;
+        }
+        }
+    </script>
+    <div class="signup">
+        <h1>Sign Up Now</h1>
+        <form onsubmit="return myfun()">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Full Name">
+            <label for="username">Username</label>
+            <input type="text" name="name" id="name" placeholder="Enter Username">
+            <label for="email">Email</label>
+            <input type="text" name="name" id="name" placeholder="Enter Email">
+            <label for="password">Password</label>
+            <span id="massage" style="color: red;"></span>
+            <input type="text" name="name" id="password" placeholder="Enter Password">
+            <label for="password">Confirm Password</label>
+            <span id="massages"></span>
+            <input type="text" name="name" id="confirm" placeholder="Confirm Password">
+            <input type="submit" value="Submit">
+        </form>
+        <p>By clicking the Sign Up button,you agree to our <br>
+            <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+         </p>
+    </div>
+    <p id="last">Already have an account? <a href="second.html">Login here</a> </p>
+</body>
+</html>

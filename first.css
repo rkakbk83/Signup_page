@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    background: url(images\ \(1\).jpg) no-repeat center center/cover;
+}
+.signup{
+    width: 360px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    margin: auto;
+    border-radius: 4px;
+}
+.login-box{
+    width: 360px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    margin: auto;
+    border-radius: 4px;
+    padding-bottom: 30px;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+    color: rgb(71, 13, 228);
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+form label{
+    display: flex;
+    margin: 3px 5px;
+    font-size: 1rem;
+}
+form input{
+    width: 100%;
+    margin: 0px 3px;
+    padding: 5px 2px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+input[type="submit"]{
+    font-size: 1rem;
+    text-align: center;
+    width: 308px;
+    margin-top: 15px;
+    background-color: rgb(71, 13, 228);
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+}
+#last{
+    text-align: center;
+    color: rgb(230, 201, 201);
+}
+#last a{
+    color: rgb(198, 41, 219);
+}
