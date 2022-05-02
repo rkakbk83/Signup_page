@@ -47,7 +47,13 @@ input[type="submit"]{
     margin-top: 15px;
     background-color: rgb(71, 13, 228);
 }
-
+input[type="button"]{
+    font-size: 1rem;
+    text-align: center;
+    width: 308px;
+    margin-top: 15px;
+    background-color: rgb(71, 13, 228);
+}
 p{
     text-align: center;
     padding-top: 20px;
